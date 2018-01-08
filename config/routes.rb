@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :portfolios
+  resources :portfolios, except: [:show]
+
+  get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
   # changed 'pages/about' route to 'about'
   get 'about-me', to: 'pages#about'
