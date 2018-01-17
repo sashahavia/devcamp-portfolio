@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/sashahavia/sashahavia_view_tool
-  revision: 354c5e59c60b97db0dedb431069f2572a3081e37
-  specs:
-    sashahavia_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -148,6 +142,7 @@ GEM
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
     ruby_dep (1.5.0)
+    sashahavia_view_tool (0.1.0)
     sass (3.5.5)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -210,7 +205,7 @@ DEPENDENCIES
   pry-byebug
   puma (~> 3.7)
   rails (~> 5.1.4)
-  sashahavia_view_tool!
+  sashahavia_view_tool (~> 0.1.0)
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)

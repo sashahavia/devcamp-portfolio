@@ -55,6 +55,6 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.4'
 gem 'bootstrap', '~> 4.0.0.beta3'
 
-gem 'sashahavia_view_tool', git: 'https://github.com/sashahavia/sashahavia_view_tool'
+gem 'sashahavia_view_tool', '~> 0.1.0'
 
 
