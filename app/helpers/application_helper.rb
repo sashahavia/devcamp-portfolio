@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def copyright_generator
+    SashahaviaViewTool::Renderer.copyright 'Sasha Havia', 'All rights reserved'
+  end
 end
