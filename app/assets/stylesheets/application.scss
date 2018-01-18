@@ -164,24 +164,28 @@ body {
 .card {
   color: black;
   text-align: left;
-  line-height: 0.5em;
-  font-size: 0.8rem;
-}
 
-.form-control {
-  line-height: 0.5em;
-  font-size: 0.8rem;
 }
 
 .auth-links a {
   color: black;
 }
 
-.edit {
-  margin-bottom: 2em;
-}
-
 .register-text {
   text-align: right;
+}
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}
+
+@media (max-width: 80em) {
+  .row {
+    margin-bottom: 2em;
+    line-height: 0.5em;
+    font-size: 0.8rem;
+  }
 }
 
