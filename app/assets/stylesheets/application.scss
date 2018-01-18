@@ -157,3 +157,27 @@ body {
   }
 }
 
+/*
+ * Custom Styles
+ */
+
+.card {
+  color: black;
+  text-align: left;
+  line-height: 0.5em;
+  font-size: 0.8rem;
+}
+
+.form-control {
+  line-height: 0.5em;
+  font-size: 0.8rem;
+}
+
+.auth-links a {
+  color: black;
+}
+
+.edit {
+  margin-bottom: 2em;
+}
+
