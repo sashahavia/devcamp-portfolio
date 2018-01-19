@@ -157,3 +157,12 @@ h6,
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+/*
+ * Footer
+ */
+@media (max-width: 80em){
+  .container {
+    max-width: 50rem;
+  }
+}
