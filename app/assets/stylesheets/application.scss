@@ -160,6 +160,9 @@ body {
 /*
  * Custom Styles
  */
+.contact {
+  margin-top: 3rem;
+}
 
 .card {
   color: black;
@@ -187,5 +190,10 @@ body {
     line-height: 0.5em;
     font-size: 0.8rem;
   }
+}
+
+.app-nav span {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
