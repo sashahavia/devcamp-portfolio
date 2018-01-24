@@ -185,6 +185,8 @@ body {
   float: none;
 }
 
+
+
 @media (max-width: 80em) {
   .row {
     margin-bottom: 2em;
@@ -219,5 +221,9 @@ body {
 
 .app-footer {
   color: white;
+}
+
+.tech-news {
+  line-height: 1.5em;  
 }
 
