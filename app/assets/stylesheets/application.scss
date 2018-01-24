@@ -224,6 +224,15 @@ body {
 }
 
 .tech-news {
-  line-height: 1.5em;  
+  line-height: 1.5em;
+  margin: 20px;  
+}
+
+.tech-news a {
+  color: green;
+}
+
+.tech-news > .card {
+  padding: 15px;
 }
 
