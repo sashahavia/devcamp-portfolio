@@ -1,8 +1,8 @@
-jQuery(document). on 'turbolinks: load', ->
+jQuery(document).on 'turbolinks:load', ->
   comments = $('#comments')
   if comments.length > 0
     App.global_chat = App.cable.subscriptions.create {
-      channel: "Blogs.channel"
+      channel: "BlogsChannel"
       blog_id: comments.data('blog-id')
     },
     connected: ->
