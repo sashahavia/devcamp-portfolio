@@ -159,11 +159,17 @@ body {
   }
 }
 
-/*
+/************************
  * Custom Styles
- */
-.contact {
-  margin-top: 3rem;
+ ************************/
+.contact a {
+  // margin-top: 3rem;
+  color: blue;
+  
+}
+
+.contact > .card {
+  text-align: center;
 }
 
 .card {
@@ -236,5 +242,23 @@ body {
 .tech-news > .card {
   padding: 15px;
 }
+
+.app-card-container > .card {
+  padding: 2em;
+}
+
+.text-about {
+  text-shadow: none; 
+}
+
+@media (max-width: 50em) {
+  .text-about {
+    margin-top: 2em; 
+  }
+}
+
+
+
+
 
 
