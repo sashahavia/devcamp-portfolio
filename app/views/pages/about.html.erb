@@ -5,6 +5,23 @@
     <div class="row about-me">
       <div class="col-md-4">
         <%= image_tag "me.jpg", width: 260, alt: "profile image" %>
+
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h6><%= skill.title %></h6>
+              <div class="progress">
+                <div 
+                  class="progress-bar progress-bar-striped bg-warning" 
+                  role="progressbar" 
+                  style="width: <%= skill.percent_utilized %>%" 
+                  aria-valuenow="<%= skill.percent_utilized %>" 
+                  aria-valuemin="0" 
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
       <div class="col-md-8 text-about">
         <p>Hi, there. I am a senior in Brooklyn College majoring in Computer Science and anticipate graduating in Spring 2018. </p>
@@ -35,6 +52,8 @@
           >
             Education
           </button>
+
+          <button class="btn btn-primary" onClick="location.href='#'">Download Resume</button>
         </p>
 
         <p>
