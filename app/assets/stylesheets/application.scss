@@ -226,6 +226,10 @@ body {
   background-size: cover;
 }
 
+.mastfoot {
+  z-index: -99;
+}
+
 .app-footer {
   color: white;
 }
@@ -244,7 +248,7 @@ body {
 }
 
 .app-card-container > .card {
-  padding: 2em;
+  padding: 1em;
 }
 
 .text-about {
@@ -257,6 +261,15 @@ body {
   }
 }
 
+.masthead {
+  z-index: 1;
+}
+
+.card-block {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 
 
