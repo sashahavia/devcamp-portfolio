@@ -164,6 +164,10 @@ h6,
 /*
  * Custom styles
  */
+
+body {
+  font-family: 'Lato', sans-serif; 
+}
 @media (max-width: 80em){
   .container {
     max-width: 50rem;
@@ -186,4 +190,26 @@ h6,
 
 .comment-name {
   font-weight: 700;
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
+}
+
+.blog-nav {
+  margin-bottom: 30px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
 }

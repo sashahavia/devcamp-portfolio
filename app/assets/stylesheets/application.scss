@@ -26,15 +26,25 @@ a:hover {
 /*
  * Base structure
  */
+
 html,
 body {
   height: 100%;
-  // background-color: #333;
+  font-family: 'Lato', sans-serif; 
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -74,7 +84,8 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  // color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, .8);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
@@ -158,11 +169,17 @@ body {
   }
 }
 
-/*
+/************************
  * Custom Styles
- */
-.contact {
-  margin-top: 3rem;
+ ************************/
+.contact a {
+  // margin-top: 3rem;
+  color: blue;
+  
+}
+
+.contact > .card {
+  text-align: center;
 }
 
 .card {
@@ -219,6 +236,10 @@ body {
   background-size: cover;
 }
 
+.mastfoot {
+  z-index: -99;
+}
+
 .app-footer {
   color: white;
 }
@@ -235,4 +256,37 @@ body {
 .tech-news > .card {
   padding: 15px;
 }
+
+.app-card-container > .card {
+  padding: 1em;
+}
+
+.text-about {
+  text-shadow: none; 
+}
+
+@media (max-width: 50em) {
+  .text-about {
+    margin-top: 2em; 
+  }
+}
+
+.masthead {
+  z-index: 1;
+}
+
+.card-block {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
 
