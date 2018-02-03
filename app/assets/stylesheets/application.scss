@@ -269,6 +269,10 @@ h6, .h6 {
   .text-about {
     margin-top: 2em; 
   }
+
+  .inner {
+    margin-top: 30%;
+  }
 }
 
 .masthead {
@@ -284,6 +288,44 @@ h6, .h6 {
 .skill {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+// Making nav bar responsive
+
+.navbar-brand {
+  font-size: 1.75rem;
+  
+}
+
+.navbar-light .navbar-brand {
+  color: #fff;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-collapse {
+  padding-left: 5em;
+}
+
+
+@media (max-width: 62em) {
+  .navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .navbar-collapse {
+    padding-left: 0;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .bg-transparent {
+    background-color: #343a40 !important;;
+  }
 }
 
 
