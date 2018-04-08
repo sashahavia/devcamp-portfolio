@@ -185,10 +185,16 @@ h6, .h6 {
 .card {
   color: black;
   text-align: left;
-  overflow:  auto;
-  -webkit-overflow-scrolling: touch;
-
 }
+
+@media(min-width: 48em) {
+    .about {
+    marging-top: 10%;
+    overflow:  auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 
 .auth-links a {
   color: black;
