@@ -1,0 +1,32 @@
+/*----------------------------------------------   
+--Fonts
+-----------------------------------------------  */
+$font-header: "playfair display", georgia, times, serif;
+$font-paragraph: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/*----------------------------------------------   
+--MQs
+-----------------------------------------------  */
+$mq-xsmall: 22em;
+$mq-small: 36em;
+$mq-med: 58em;
+$mq-medium: 75em;
+$mq-large: 86em;
+$mq-xlarge: 115em;
+$mq-xxlarge: 125em;
+$mq-xxxlarge: 145em;
+
+/*----------------------------------------------   
+--Colors
+-----------------------------------------------  */
+$color-light: rgba(255,255,255,0.8);
+$color-alpha: #98DAEE;
+$color-beta: #7690A4;
+
+/*----------------------------------------------   
+--Story
+-----------------------------------------------  */
+$story-height: 680px;
+$story-height-lg: 1080px;
+$story-text-shadow: 2px 2px #000000;
+$story-line-height: 50px;

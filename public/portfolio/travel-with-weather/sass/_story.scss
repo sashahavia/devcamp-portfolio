@@ -1,0 +1,199 @@
+.sharedHeight {
+	height: $story-height;
+	background-attachment: fixed;
+	text-align: center;
+	position: relative;
+}
+
+.sharedText {
+	font-weight: 400;
+	font-size: 18pt;
+	line-height: $story-line-height;
+	@media (min-width: $mq-med){
+		font-size: 30pt;
+	}
+	@media (min-width: $mq-large){
+		font-size: 40pt;
+	}
+}
+
+.intro {
+	background-image: url(../images/story/intro_bg.jpg);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/intro_bg_lg.jpg);
+		height: $story-height-lg;
+	}
+}
+
+#intro {
+	background-image: url(../images/story/intro_snow1.png);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/intro_snow2_lg.png);
+		height: $story-height-lg;
+	}
+}
+
+#introText {
+	position: relative;
+	top: 40%;
+}
+
+#introText h2 {
+	color: #FFFFFF;
+	text-shadow: $story-text-shadow;
+	@extend .sharedText;
+	
+
+}
+#introText p {
+	color: #FFFFFF;
+	font-weight: 400;
+	text-shadow: $story-text-shadow;
+}
+
+.spring {
+	background-image: url(../images/story/spring_bg.jpg);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/spring_bg_lg.jpg);
+		height: $story-height-lg;
+	}
+}
+
+#spring {
+	background-image: url(../images/story/spring_flowers.png);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/spring_flowers_lg.png);
+		height: $story-height-lg;
+	}
+}
+
+#springText {
+	position: relative;
+	top: 40%;
+}
+
+#springText h2 {
+	color: #4c517f;
+	text-shadow: 1px 1px 20px #FFFFFF;
+	@extend .sharedText;
+}
+
+.summer {
+	background-image: url(../images/story/summer_bg.jpg);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/summer_bg_lg.jpg);
+		height: $story-height-lg;
+	}
+}
+
+#summer {
+	background-image: url(../images/story/summer_bees.png);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/summer_bees_lg.png);
+		height: $story-height-lg;
+	}
+}
+
+#summerText {
+	position: relative;
+	top: 40%;
+}
+
+#summerText h2 {
+	color: #FFFFFF;
+	text-shadow: $story-text-shadow;
+	@extend .sharedText;
+}
+
+.fall {
+	background-image: url(../images/story/fall_bg.jpg);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/fall_bg_lg.jpg);
+		height: $story-height-lg;
+	}
+}
+
+#fall {
+	background-image: url(../images/story/fall_rain.png);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/fall_rain_lg.png);
+		height: $story-height-lg;
+	}
+}
+
+#fallText {
+	position: relative;
+	top: 40%;
+}
+
+#fallText h2 {
+	color: #FFFFFF;
+	text-shadow: $story-text-shadow;
+	@extend .sharedText;
+}
+
+.winter {
+	background-image: url(../images/story/winter_bg.jpg);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/winter_bg_lg.jpg);
+		height: $story-height-lg;
+	}
+}
+
+#winter {
+	background-image: url(../images/story/winter_snow.png);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/winter_snow_lg.png);
+		height: $story-height-lg;
+	}
+}
+
+#winterText {
+	position: relative;
+	top: 40%;
+}
+
+#winterText h2 {
+	color: #FFFFFF;
+	text-shadow: $story-text-shadow;
+	@extend .sharedText;
+}
+
+.end  {
+	background-image: url(../images/story/end_bg.jpg);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/end_bg_lg.jpg);
+		height: $story-height-lg;
+	}
+}
+
+#end {
+	background-image: url(../images/story/end_all.png);
+	@extend .sharedHeight;
+	@media (min-width: $mq-large){
+		background-image: url(../images/story/end_all_lg.png);
+		height: $story-height-lg;
+	}
+}
+
+#endText {
+	position: relative;
+	top: 40%;
+}
+
+#endText h2 {
+	color: #FFFFFF;
+	text-shadow: $story-text-shadow;
+	@extend .sharedText;
+}

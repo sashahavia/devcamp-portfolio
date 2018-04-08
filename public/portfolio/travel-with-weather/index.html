@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Travel with Weather</title>
+	<link rel="shortcut icon" href="images/favicon2.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Sect: Banner
+======================================= -->	
+		<section class="sect-banner">
+		 <!--List items for bg images -->
+		 <ul class="kf-slider">
+			  <li></li>
+			  <li></li>
+			  <li></li>
+		 </ul>
+		 <!-- Vertically Center Content -->
+		 <div class="v-center">
+			  <h1>Travel with Weather</h1>
+				<h3>Plan your vacation better. Try maps with weather.</h3>
+				<button id="start">Start</button>	
+		 </div>
+		</section>       
+<!-- Google Maps Api Key AIzaSyCOrtYHsE4Lx4ZBbUCIQz4dHFbHEMg5uRg -->
+	<section id="enterValues">
+		<div id="values_bg">
+			<form id="values">
+				<div>
+					<div id="valuesFromCity">
+						<label for="fromCity">From City:</label>
+						<input id="fromCity" type="text">
+					</div>
+					<div id="valuesToCity">
+						<label for="toCity">To City: </label>
+						<input id="toCity" type="text">
+					</div>
+					<div id="valuesButton">
+						<button id="submit">Check Weather</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section id="result">
+		<div id="nav">
+			<div id="menu-icon"><i class="fa fa-bars fa-2x"></i></div>
+			<div id="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Seasons</a></li>
+					<li><a href="story.html">Story</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row result">
+			<div class="col-md-6" id="fromCity">
+				<h2></h2>
+				<div class="icon0">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon1">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon2">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon3">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon4">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon5">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon6">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+			</div>
+	  		<div class="col-md-6" id="toCity">
+	  			<h2></h2>
+				<div class="icon0">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon1">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon2">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon3">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon4">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon5">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+				<div class="icon6">
+					<p></p>
+					<img src="">
+					<p id="day"></p>
+					<p id="night"></p>
+				</div>
+	  		</div>	
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h2 id="distance"></h2>
+	  			<div id="googleMap"></div>
+	  		</div>
+		</div>
+	</section>
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhlCO_fPShBlgT_4K-fE-WBHAYbO_ErYg"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+ /* --Bourbon from CodeKit
+=======================================*/
+@import '../bourbon/bourbon';
+
+/* --settings
+=======================================*/
+@import 'partials/_config';
+@import 'partials/_mixins';
+
+/* --vendor
+=======================================*/
+@import 'partials/_normalizer';
+
+/* --Modules
+=======================================*/
+@import 'partials/_typography';
+@import 'partials/_layout';
+@import 'partials/_animations';
+
+/* --Story
+=======================================*/
+@import '_story';
+
+html {
+    background-color: #FFFFFF;
+}
+
+h1 {
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 1px 1px #222222;
+}
+
+h3 {
+	color: rgba(255, 255, 255, 1);
+	font-family: $font-paragraph;
+	font-weight: 300;
+    text-rendering: optimizeLegibility;
+    line-height: 1.2;
+    text-shadow: 1px 1px #222222;
+	font-size: 1.125em;
+
+	@media (min-width: $mq-large){
+		font-size: 34pt;
+		
+	}
+
+}
+
+
+.sharedButtonValues {
+	font-size: 16pt;
+	padding: 10px 20px 10px 20px;
+	color: rgba(255, 255, 255, 1);
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	text-transform: uppercase;
+}
+
+#start {
+	margin-top: 40px;
+	background: rgba(255, 255, 255, 0);
+	font-weight: 300;
+	@extend .sharedButtonValues;
+
+	@media (min-width: $mq-large){
+		font-size: 24pt;
+		padding: 20px 20px 20px 20px;
+		border-radius: 10px;
+	}
+}
+
+
+
+#enterValues {
+	display: none;
+}
+
+#values_bg {
+	height: 100vh;
+	background-image:	url(../images/values_bg_sm.jpg);
+
+	@media (min-width: $mq-med){
+	 		background: url(../images/values_bg.jpg) no-repeat center center fixed;
+	 		background-opacity: 0.2;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+	 	}
+}
+
+#values {
+	width: 430px;
+	height: 180px;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.6);
+	border: solid 1px #999999;
+	border-radius: 10px;
+	font-size: 20pt;
+	position:fixed;
+	top: 30%;
+	left: 5%;
+	
+	@media (min-width: $mq-small){
+		width: 450px;
+		left: 25%;
+	}
+	@media (min-width: $mq-medium){	
+		width: auto;
+		height: auto;
+		position:fixed;
+		top: 40%;
+		left: 10%;
+	}
+
+	@media (min-width: $mq-large){
+		font-size: 30pt;
+		top: 45%;
+		left: 15%;
+	}
+}
+
+#values label {
+	color: white;
+	text-shadow: 1px 1px #222222;
+	font-weight: 300;
+}
+
+#values input {
+	margin-top: 2%;
+	float: right;
+	cursor:auto;
+	font-weight: 300;
+	@media (min-width: $mq-small){
+		
+	}
+}
+
+#values button {
+	margin-top: 2%;
+	text-shadow: 1px 1px #222222;
+	font-weight: 300;
+	background: rgba(255, 255, 255, 0);
+	margin-left: 25%;
+	@extend .sharedButtonValues;
+	@media (min-width: $mq-medium){
+		margin-left: 0%;
+	}
+}
+
+#valuesFromCity, 
+#valuesToCity, 
+#valuesButton {
+	display: block;
+	@media (min-width: $mq-medium){
+		display: inline-block;
+	}
+}
+
+#result {
+	display: none;
+	height: 100vh;
+	background-image:	url(../images/slider2_bg_sm.jpg);
+
+	@media (min-width: $mq-med){
+	 		background: url(../images/slider2_bg.jpg) no-repeat center center fixed;
+	 		background-opacity: 0.2;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+	 	}
+}
+// result navigation
+
+#navigation {
+	display: none;
+	position: relative;
+	z-index: 1000;
+}
+#navigation ul {
+	background: rgba( 68, 86, 127, 0.5);
+}
+
+#navigation li {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+#navigation a{
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 1px 1px #222222;
+	text-transform: uppercase;
+}
+
+#navigation2 {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+}
+#navigation2 ul {
+}
+
+#navigation2 li {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+#navigation2 a{
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 1px 1px #222222;
+	text-transform: uppercase;
+}
+
+#menu-icon {
+	z-index: 1002;
+	width: 1.875em;
+	height: 1.875em;
+	color: #FFFFFF;
+	cursor: pointer;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+// Styling the weather results
+
+
+#toCity h2, 
+#fromCity h2 {
+	text-align: center;
+	text-transform: capitalize;
+	color: #fff;
+	font-weight: 400;
+	text-shadow: 1px 1px #222222;
+	margin-bottom: 10px;
+
+	@media (min-width: $mq-large){
+		font-size: 30pt;
+	}
+}
+
+.icon0, .icon1, .icon2,
+.icon3, .icon4, .icon5,
+.icon6 {
+	float: left; 
+	width: 14%;
+	border: 1px solid #888888;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 1);
+}
+
+.icon0 p, .icon1 p, .icon2 p,
+.icon3 p, .icon4 p, .icon5 p,
+.icon6 p {
+	text-align: center;
+	font-weight: 400;
+	font-size: 90%;
+}
+
+#distance {
+	margin-top: 10px;
+	font-size: 1.625em;
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 1px 1px #222222;
+	text-align: center;
+
+}
+
+#googleMap {
+	width: 100vw;
+	height: 380px;
+	margin-top: 10px;
+	border-radius: 15px;
+
+	@media (min-width: $mq-large){
+		height: 550px;
+	}
+
+}
+
+// Settings fixed position
+
+

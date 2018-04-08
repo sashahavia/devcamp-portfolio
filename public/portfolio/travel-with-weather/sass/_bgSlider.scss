@@ -1,0 +1,94 @@
+/*----------------------------------------------   
+--Banner
+-----------------------------------------------  */
+.sect-banner{
+ display: table;
+ width: 100%;
+ margin: 0 auto;
+ text-align: center;
+
+ /*-- Full Height --*/
+ height: 100vh;
+ color: rgba(255,255,255,0.9);
+
+ /*-- Create an Overlay --*/
+ &:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(118, 144, 164, 0.4);
+  z-index: 0;
+ }
+
+ /*-- Vertically center --*/
+ .v-center{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 4;
+  padding: 0 5%;
+ }
+}
+
+/*----------------------------------------------   
+--Keyframes
+-----------------------------------------------  */
+@include keyframes(fade-out) {
+ 33%{
+  opacity: 1
+ }
+ 66%{
+ opacity: 0
+ }
+}
+
+/*----------------------------------------------   
+--List for images, sm and large
+-----------------------------------------------  */
+ul.kf-slider{
+ li{    
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  50%;
+  z-index: 0;
+  opacity: 0;
+  /*-- Add animation --*/ 
+  @include animation(fade-out 9s infinite both);
+  /*-- Image 1: small --*/ 
+  background-image: url(../images/bg_slider/autumn.jpg);
+  @media (min-width: 32ems){
+   /*-- Image 1: large --*/ 
+   background-image: url(../images/bg_slider/banner-1.jpg);
+  }
+ }
+ /*-- Image 2 --*/ 
+ li:nth-child(2){
+  background-image: url(../images/bg_slider/banner-2-sm.jpg);
+  /*-- Animation delay: 3s --*/ 
+  @include animation-delay(3s);
+  @media (min-width: 32ems){
+   background-image: url(../images/bg_slider/banner-2.jpg);
+  }
+ }
+ /*-- Image 3 --*/ 
+ li:nth-child(3){
+  background-image: url(../images/bg_slider/banner-3-sm.jpg);
+  /* Animation delay: 6s */  
+  @include animation-delay(6s);
+  @media (min-width: 32ems){
+   background-image: url(../images/bg_slider/banner-3.jpg);
+  }
+ }
+}
+
+
+
+
+
