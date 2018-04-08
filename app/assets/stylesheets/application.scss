@@ -187,12 +187,14 @@ h6, .h6 {
   text-align: left;
 }
 
-
+@media(min-width: 48em){
   .about {
-  marging-top: 10%;
-  overflow:  auto;
-  -webkit-overflow-scrolling: touch;
+    margin-top: 10%;
+    overflow:  auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
+  
 
 
 
