@@ -187,16 +187,13 @@ h6, .h6 {
   text-align: left;
 }
 
-@media(min-width: 40em) and (max-width: 75em){
+@media(min-width: 40em) and (max-width: 80em){
   .about {
     margin-top: 10%;
     overflow:  auto;
     -webkit-overflow-scrolling: touch;
   }
 }
-  
-
-
 
 .auth-links a {
   color: black;
@@ -256,7 +253,8 @@ h6, .h6 {
 
 .tech-news {
   line-height: 1.5em;
-  margin: 20px;  
+  margin: 20px;
+  margin-top: 10%;  
 }
 
 .tech-news a {
