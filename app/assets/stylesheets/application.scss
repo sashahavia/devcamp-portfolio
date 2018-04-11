@@ -251,10 +251,15 @@ h6, .h6 {
   color: white;
 }
 
+@media(min-width: 40em) and (max-width: 80em){
+  .tech {
+    margin-top: 10%; 
+  }
+}
+
 .tech-news {
   line-height: 1.5em;
-  margin: 20px;
-  margin-top: 10%;  
+  margin: 20px; 
 }
 
 .tech-news a {
